@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp-pod
+spec:
+  containers:
+  - name: myapp
+    image: your-dockerhub-username/myapp:latest
+    ports:
+    - containerPort: 8080
