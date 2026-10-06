@@ -1,13 +1,13 @@
 pipeline {
     agent any
     environment {
-        DOCKERHUB_USER = 'your-dockerhub-username'
+        DOCKERHUB_USER = 'vjdani'
         IMAGE_NAME = 'myapp'
     }
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/your-username/your-repo.git'
+                git 'https://github.com/Aryan1Badadani/my-k8s-deployment.git'
             }
         }
         stage('Build Docker Image') {
