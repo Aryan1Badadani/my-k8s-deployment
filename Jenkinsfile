@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Aryan1Badadani/my-k8s-deployment.git'
+                git branch: 'main', url: 'https://github.com/Aryan1Badadani/my-k8s-deployment.git'
             }
         }
         stage('Build Docker Image') {
